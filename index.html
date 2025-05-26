@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول - مدونة فادي</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #71b7e6, #9b59b6);
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      direction: rtl;
+    }
+    .container {
+      background-color: #fff;
+      width: 900px;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      display: flex;
+      overflow: hidden;
+      gap: 0;
+    }
+    .image-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .image-section img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 15px 0 0 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .login-section {
+      flex: 1;
+      padding: 40px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .login-section h2 {
+      color: #5a2a83;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="text"],
+    input[type="password"] {
+      padding: 15px 20px;
+      margin-bottom: 25px;
+      border: 1.8px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: #5a2a83;
+    }
+    button {
+      padding: 15px 20px;
+      background-color: #5a2a83;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #7e47b9;
+    }
+    .links {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .links a {
+      color: #5a2a83;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin: 0 8px;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        width: 100%;
+      }
+      .image-section {
+        padding: 10px;
+      }
+      .login-section {
+        padding: 30px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="صفحة تسجيل الدخول">
+    <div class="image-section" aria-label="صورة رجل يركض">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="رجل يركض في الهواء الطلق">
+    </div>
+    <div class="login-section">
+      <h2>تسجيل الدخول</h2>
+      <form action="index.html" method="get" novalidate>
+        <input type="text" name="username" placeholder="اسم المستخدم" required aria-label="اسم المستخدم" />
+        <input type="password" name="password" placeholder="كلمة المرور" required aria-label="كلمة المرور" />
+        <button type="submit" aria-label="زر تسجيل الدخول">دخول</button>
+      </form>
+      <div class="links">
+        <p><a href="#" tabindex="0">هل نسيت كلمة المرور؟</a></p>
+        <p><a href="انشاء حساب.html" tabindex="0">إنشاء حساب جديد</a></p>
+      </div>
+    </div>
+  </div>
+  <footer>
+  </footer>
+</body>
+</html>
+

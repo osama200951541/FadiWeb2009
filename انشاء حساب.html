@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إنشاء حساب - مدونة فادي</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1f5f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .register-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      margin: 50px auto;
+    }
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 24px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #023e8a;
+    }
+    .links {
+      margin-top: 12px;
+      text-align: center;
+    }
+    .links a {
+      color: #0077b6;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: auto;
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>إنشاء حساب جديد</h1>
+  </header>
+  <div class="register-container">
+    <h2>مستخدم جديد</h2>
+    <form action="نجاح التسجيل.html" method="get">
+      <input type="text" name="username" placeholder="اسم المستخدم" required />
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+      <input type="password" name="password" placeholder="كلمة المرور" required />
+      <button type="submit">إنشاء الحساب</button>
+      <div class="links">
+        <p><a href="تسجيل الدخول.html">العودة لتسجيل الدخول</a></p>
+      </div>
+    </form>
+  </div>
+  <footer>
+    &copy; 2025 مدونة فادي للياقة البدنية
+  </footer>
+</body>
+</html>
